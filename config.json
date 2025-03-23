@@ -8,10 +8,11 @@
     "autoMarkDelivery": false,
     "autoMarkRead": false
   },
-  "botPrefix": "/",
-  "botName": "Made in ChatGPT",
+  "botPrefix": "-",
+  "botName": "Happy Bot",
   "botAdmins": [
-    "100030880666720"
+    "61550348197141",
+    "100092647806555"
   ]
 }
 
