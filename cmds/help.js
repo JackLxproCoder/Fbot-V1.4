@@ -19,13 +19,13 @@ module.exports = {
 
                 const allHelpMessage = `
 ╔════════════╗
-     🤖 All Command 🤖
+🤖 All Command 🤖
 ╚════════════╝
 ${allCommands}
 
 Use 'help [command_name]' for details.
 
-👑 Owner: Mark Martinez
+👑 Owner: JackLxproCoder
                 `;
 
                 return api.sendMessage(allHelpMessage, threadID, messageID);
@@ -40,14 +40,14 @@ Use 'help [command_name]' for details.
 
             const commandHelpMessage = `
 ╔════════════╗
-     🤖 Command Info 🤖
+🤖 Command Info 🤖
 ╚════════════╝
 Name: ${command.name}
 Usage: ${command.usage}
 Prefix Required: ${command.usePrefix ? "✅ Yes" : "❌ No"}
 Version: ${command.version}
 
-👑 Owner: Mark Martinez
+👑 Owner: JackLxproCoder
             `;
 
             return api.sendMessage(commandHelpMessage, threadID, messageID);
@@ -62,7 +62,7 @@ Version: ${command.version}
 
         const helpMessage = `
 ╔════════════╗
-     🤖 Bot Commands 🤖
+🤖 Bot Commands 🤖
 ╚════════════╝
 Here are some commands:  
 ${commandArray}
@@ -70,7 +70,7 @@ ${commandArray}
 Use 'help all' to see all commands.
 Use 'help [command_name]' for details.
 
-👑 Owner: Mark Martinez
+👑 Owner: JackLxproCoder
         `;
 
         api.sendMessage(helpMessage, threadID, messageID);
