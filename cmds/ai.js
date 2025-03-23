@@ -13,7 +13,7 @@ module.exports = {
         }
 
         const query = encodeURIComponent(args.join(" "));
-        let apiUrl = `https://testapi2-919t.onrender.com/gemini-2.0pro?ask=${query}`;
+        let apiUrl = `https://kaiz-apis.gleeze.com/api/deepseek-v3?ask=${query}`;
 
         // Send "Searching..." message first
         const loadingMsg = await api.sendMessage("🔎 Searching for an answer. Please wait...", threadID);
