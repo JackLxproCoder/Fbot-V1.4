@@ -31,10 +31,10 @@ module.exports = {
 
             // Fetch AI response
             const response = await axios.get(apiUrl);
-            const replyText = response.data.description || "🤖 No response received.";
+            const replyText = response.data.response || "🤖 No response received.";
 
             // Send final response
-            api.sendMessage(`🤖 **GEMINI AI**\n━━━━━━━━━━━━━━━━\n${replyText}\n━━━━━━━━━━━━━━━━`, threadID, loadingMsg.messageID);
+            api.sendMessage(`🤖 **Deepseek V3**\n━━━━━━━━━━━━━━━━\n${replyText}\n━━━━━━━━━━━━━━━━`, threadID, loadingMsg.messageID);
         } catch (error) {
             console.error(error);
             api.sendMessage("❌ An error occurred while processing your request.", threadID, messageID);
