@@ -10,8 +10,8 @@ module.exports = {
     usage: "prefix",
     version: "1.0",
     execute(api, event, args) {
-        const botPrefix = config.prefix || "/";
-        const botName = config.botName || "My Bot";
+        const botPrefix = config.prefix || "-";
+        const botName = config.botName || "Happy Bot";
 
         let message = `🤖 *Bot Information* 🤖\n`;
         message += `📌 *Prefix:* ${botPrefix}\n`;
